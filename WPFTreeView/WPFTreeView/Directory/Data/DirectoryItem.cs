@@ -1,24 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WPFTreeView
+﻿namespace WPFTreeView
 {
     public class DirectoryItem
     {
-        public DirectoryType DirectoryType { get; set; }
+        public DirectoryItemType Type { get; set; }
 
-        public bool isExpanded { get; set; }
+        public string Name { get; set; }
 
-
+        /// <summary>
+        /// 文件、文件夹完整路径
+        /// </summary>
+        public string FullPath { get; set; }
     }
 
-    public enum DirectoryType
+    public enum DirectoryItemType
     {
+        /// <summary>
+        /// 逻辑盘
+        /// </summary>
         Drive,
+
+        /// <summary>
+        /// 文件夹
+        /// </summary>
         Folder,
+
+        /// <summary>
+        /// 文件
+        /// </summary>
         File
     }
 }
