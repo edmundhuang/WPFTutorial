@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstantMessage", "InstantMessage\InstantMessage.csproj", "{552C5A0E-CB76-49D5-BFE5-87004ABA01F7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{4AC8078E-B1A6-4227-BD9A-F030DAA7B26C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstantMessage.ViewModel", "InstantMessage.ViewModel\InstantMessage.ViewModel.csproj", "{5EFA7DDB-577B-4300-BC5C-2BF387BF4035}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,17 @@ Global
 		{552C5A0E-CB76-49D5-BFE5-87004ABA01F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{552C5A0E-CB76-49D5-BFE5-87004ABA01F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{552C5A0E-CB76-49D5-BFE5-87004ABA01F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EFA7DDB-577B-4300-BC5C-2BF387BF4035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EFA7DDB-577B-4300-BC5C-2BF387BF4035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EFA7DDB-577B-4300-BC5C-2BF387BF4035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EFA7DDB-577B-4300-BC5C-2BF387BF4035}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{552C5A0E-CB76-49D5-BFE5-87004ABA01F7} = {4AC8078E-B1A6-4227-BD9A-F030DAA7B26C}
+		{5EFA7DDB-577B-4300-BC5C-2BF387BF4035} = {4AC8078E-B1A6-4227-BD9A-F030DAA7B26C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2B3D46F-2F91-4D75-96AD-0EB5DA3B6949}
